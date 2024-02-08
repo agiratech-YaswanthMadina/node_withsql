@@ -6,6 +6,7 @@ const app = express();
 function getPerson(){
     sqldb.execute('SELECT * from person').then(([rows, filedata]) => {
         console.log(rows);
+        console.log(filedata);
     })
 }
 
